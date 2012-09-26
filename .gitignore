@@ -1,6 +1,10 @@
-*.class
+.classpath
+.project
+.settings/
+.gradle
+build
+target/
+bin/
+derby.log
 
-# Package Files #
-*.jar
-*.war
-*.ear
+

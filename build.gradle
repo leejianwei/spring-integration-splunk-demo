@@ -1,0 +1,31 @@
+description = 'Spring Integration Splunk Adapter Example'
+apply plugin: 'base'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories {
+	//mavenCentral()
+	maven { url "http://repo.springsource.org/libs-snapshot" }
+}
+
+dependencies {
+	compile "org.springframework.integration:spring-integration-splunk:$springIntegrationSplunkVersion"
+	compile "org.springframework.integration:spring-integration-jdbc:$springIntegrationVersion"
+	compile("org.springframework.integration:spring-integration-twitter:$springIntegrationVersion")
+	compile "org.springframework:spring-web:$springVersion"
+	compile "javax.activation:activation:$javaxActivationVersion"
+	compile "org.springframework.security:spring-security-core:$springSecurityVersion"
+	compile "org.springframework.security:spring-security-crypto:$springSecurityVersion"
+	
+	compile "org.springframework:spring-jdbc:$springVersion"
+	compile "org.codehaus.jackson:jackson-mapper-asl:$jacksonVersion"
+	compile "org.apache.derby:derby:$derbyVersion"
+	compile "hsqldb:hsqldb:$hsqlVersion"
+	compile "commons-pool:commons-pool:$commonsPoolVersion"
+	compile "commons-lang:commons-lang:$commonsLangVersion"
+}
+
+mainClassName = "org.springframework.integration.splunk.example.outbound.jdbc.DatabaseMain"
+
+defaultTasks 'clean', 'run'
