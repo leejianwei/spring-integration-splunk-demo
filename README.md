@@ -11,7 +11,7 @@ Development
 Create Twitter Application
 =====================================
 1. got to https://dev.twitter.com
-2. clite "create an app"
+2. click "create an app"
 3. fill all the data to generate twitter app
 4. update "src/main/resources/twitter.properties" to your twitter application
 5. update Splunk server info in the "src/main/resources/org/springframework/integration/splunk/example/SplunkCommon-context.xml"
