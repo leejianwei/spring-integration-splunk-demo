@@ -22,12 +22,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @since 1.0
  * 
  */
-public class TwiterMain {
+public class TwitterMain {
 
 	public static void main(String args[]) throws InterruptedException {
 
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"SpringSplunkShowcaseTwitter-context.xml", TwiterMain.class);
+				"SpringSplunkShowcaseTwitter-context.xml", TwitterMain.class);
 		ctx.start();
 
 	}
